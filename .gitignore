@@ -1,0 +1,5 @@
+# Ignore targets and intermediate files
+/*.gif
+/extracted_*
+/stampfer/
+/baynes/
