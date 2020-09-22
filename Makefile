@@ -1,6 +1,6 @@
 # ======================================================================
 # Makefile - creates bilevel animated GIFs from image sequences
-# Copyright (C) 2019 John Neffenger
+# Copyright (C) 2019-2020 John Neffenger
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -32,7 +32,7 @@ stampfer_bitmap = --filter 12 --scale 2 --cubic --threshold 0.45
 baynes_bitmap = --filter 16 --scale 2 --cubic --threshold 0.48
 
 # Image processing options
-monochrome = -layers Flatten -dither None -monochrome -negate
+monochrome = -layers Flatten -dither None -monochrome
 animation = -delay 13 -dispose None -loop 0 -background white
 extract = -coalesce -scene 1
 stampfer_threshold = -resize x600 -threshold 45% -background white
